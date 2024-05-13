@@ -14,32 +14,57 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.cards {
-  height: 100vh;
-  width: 20%;
+main {
+  height: 100lvh;
+  width: 100lvw;
+}
+
+.img-cards {
+  height: 100%;
+  width: 100%;
+}
+
+.aside-cards {
+  width: 15rem;
   float: left;
-  background-color: var(--g6);
+  background-color: var(--g3);
 }
 
-.vert-cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+.ul-cards {
+  height: 100lvh;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 10% 20% 10% 20% 10% 20% 10%;
 }
 
-.card {
-  border: solid;
-  border-width: 2px;
-  border-color: var(--g1);
+.li-cards {
+  grid-column: 2 / 3;
+  border: solid .2rem var(--g1);
 }
 
-.card-image {
-  height: 175px;
-  width: 175px;
+.li-cards:hover {
+  display: pointer;
+}
+
+.list-cards1 {
+  grid-row: 2 / 3;
+}
+
+.list-cards2 {
+  grid-row: 4 / 5;
+}
+
+.list-cards3 {
+  grid-row: 6 / 7;
+}
+
+.h3-cards {
+  position: absolute;
+  margin: -1.5rem 2rem;
+  font-display: bold;
+  z-index: 1;
+  pointer-events: none;
 }
